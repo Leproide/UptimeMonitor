@@ -74,11 +74,11 @@ TELEGRAM_CHAT_ID="CHANGE_ME"
 
 - The script continuously checks internet connectivity by pinging $TARGET_IP (default: 8.8.8.8).
 - If a disconnection is detected:
--- The timestamp is logged.
--- A Gotify/Telegram notification is sent (if enabled).
--- The script waits for reconnection.
+  - The timestamp is logged.
+  - A Gotify/Telegram notification is sent (if enabled).
+  - The script waits for reconnection.
 - Once reconnected:
---The recovery timestamp and downtime duration are logged.
--- A Gotify/Telegram notification is sent (if enabled).
--- he loop repeats indefinitely.
+  - The recovery timestamp and downtime duration are logged.
+  - A Gotify/Telegram notification is sent (if enabled).
+  - Loop repeats indefinitely.
 
