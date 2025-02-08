@@ -8,6 +8,13 @@ The script comes in **two versions**:
 - **External Monitoring:** Runs from a **remote VPS or another location**, pinging your **public IP**.  
   - This allows you to **cross-check logs** from both locations, proving that the issue lies with your ISP and **not** your local network (LAN).
 
+## 💡 Why Use This?
+
+✅ Prove to your ISP that the issue is not your LAN, the main excuse for not investigating is "WiFi coverage or interference" or "cabling issues".
+✅ Monitor uptime/downtime with exact timestamps.
+✅ Receive instant notifications via Telegram or Gotify.
+✅ Works on Windows (PowerShell) & Linux (Bash).
+
 ### 📢 **Notifications (Gotify & Telegram)**
 The **external monitoring version** supports **Gotify** and **Telegram** notifications.  
 - Get **real-time alerts** when your connection **goes down** or is **restored**.
@@ -69,17 +76,18 @@ TELEGRAM_ENABLED=true
 TELEGRAM_BOT_TOKEN="CHANGE_ME"
 TELEGRAM_CHAT_ID="CHANGE_ME"
 ```
+---
 
 # 📜 How It Works
 
-- The script continuously checks internet connectivity by pinging $TARGET_IP (default: 8.8.8.8).
+- The script continuously checks internet connectivity by pinging the target IP (default: 8.8.8.8 for internal).
 - If a disconnection is detected:
   - The timestamp is logged.
-  - A Gotify/Telegram notification is sent (if enabled).
+  - A Gotify/Telegram notification is sent (for the outside script if enabled).
   - The script waits for reconnection.
 - Once reconnected:
   - The recovery timestamp and downtime duration are logged.
-  - A Gotify/Telegram notification is sent (if enabled).
+  - A Gotify/Telegram notification is sent (for the outside script if enabled).
   - Loop repeats indefinitely.
 
 # 📝 Log Example
