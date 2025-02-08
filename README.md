@@ -11,8 +11,11 @@ The script comes in **two versions**:
 ## 💡 Why Use This?
 
 ✅ Prove to your ISP that the issue is not your LAN, the main excuse for not investigating is "WiFi coverage or interference" or "cabling issues".
+
 ✅ Monitor uptime/downtime with exact timestamps.
+
 ✅ Receive instant notifications via Telegram or Gotify.
+
 ✅ Works on Windows (PowerShell) & Linux (Bash).
 
 ### 📢 **Notifications (Gotify & Telegram)**
