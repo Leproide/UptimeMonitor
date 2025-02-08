@@ -70,4 +70,15 @@ TELEGRAM_BOT_TOKEN="CHANGE_ME"
 TELEGRAM_CHAT_ID="CHANGE_ME"
 ```
 
+# 📜 How It Works
+
+- The script continuously checks internet connectivity by pinging $TARGET_IP (default: 8.8.8.8).
+- If a disconnection is detected:
+-- The timestamp is logged.
+-- A Gotify/Telegram notification is sent (if enabled).
+-- The script waits for reconnection.
+- Once reconnected:
+--The recovery timestamp and downtime duration are logged.
+-- A Gotify/Telegram notification is sent (if enabled).
+-- he loop repeats indefinitely.
 
