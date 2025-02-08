@@ -38,6 +38,7 @@ Modify the following parameters in the script to suit your setup.
 # 🌐 Monitoring Target (IP to check for internet reachability)
 $TARGET_IP = "8.8.8.8"
 ```
+Use for example 8.8.8.8 for internal check and your public IP address for the external.
 
 #### 📢 Gotify parameters
 ```powershell
@@ -60,6 +61,7 @@ $TELEGRAM_CHAT_ID = "CHANGE_ME"
 ```bash
 TARGET_IP="8.8.8.8"
 ```
+Use for example 8.8.8.8 for internal check and your public IP address for the external.
 
 #### 📢 Gotify parameters (modifiable for easy future management)
 ```bash
