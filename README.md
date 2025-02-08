@@ -82,3 +82,8 @@ TELEGRAM_CHAT_ID="CHANGE_ME"
   - A Gotify/Telegram notification is sent (if enabled).
   - Loop repeats indefinitely.
 
+# 📝 Log Example
+```text
+Disconnection detected: 10-02-2024 14:35:22
+Reconnected at 10-02-2024 14:40:50 - Downtime duration: 00:05:28
+```
