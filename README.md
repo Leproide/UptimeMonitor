@@ -23,13 +23,13 @@ The **external monitoring version** supports **Gotify** and **Telegram** notific
 ### **2️⃣ Configure the Script**
 Modify the following parameters in the script to suit your setup.
 
-#### 🔹 **For PowerShell (Windows)**
+# 🔹 **For PowerShell (Windows)**
 ```powershell
 # 🌐 Monitoring Target (IP to check for internet reachability)
 $TARGET_IP = "8.8.8.8"
 ```
 
-# 📢 Gotify parameters
+#### 📢 Gotify parameters
 ```powershell
 $GotifyToken = "CHANGE_ME"
 $GotifyServer = "CHANGE_ME"
@@ -37,33 +37,33 @@ $GotifyPort = "CHANGE_ME"
 $NOTIFY_ENABLED = $true  # Enable (true) or disable (false) Gotify notifications
 ```
 
-# 📬 Telegram parameters
+#### 📬 Telegram parameters
 ```powershell
 $TELEGRAM_ENABLED = $true  # Enable (true) or disable (false) Telegram notifications
 $TELEGRAM_BOT_TOKEN = "CHANGE_ME"
 $TELEGRAM_CHAT_ID = "CHANGE_ME"
 ```
 
-#### 🔹 **For Bash (Linux)**
+# 🔹 **For Bash (Linux)**
 
-# 🌐 Monitoring Target (IP to check for internet reachability)
+#### 🌐 Monitoring Target (IP to check for internet reachability)
 ```bash
 TARGET_IP="8.8.8.8"
 ```
 
-# 📢 Gotify parameters (modifiable for easy future management)
+#### 📢 Gotify parameters (modifiable for easy future management)
 ```bash
 GotifyToken="CHANGE_ME"
 GotifyServer="CHANGE_ME"
 GotifyPort="CHANGE_ME"
 ```
 
-# Enable (true) or disable (false) Gotify notifications
+#### Enable (true) or disable (false) Gotify notifications
 ```bash
 NOTIFY_ENABLED=true
 ```
 
-# 📬 Telegram parameters
+#### 📬 Telegram parameters
 ```bash
 TELEGRAM_ENABLED=true
 TELEGRAM_BOT_TOKEN="CHANGE_ME"
