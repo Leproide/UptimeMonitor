@@ -1,5 +1,5 @@
 # Target IP to monitor
-$TARGET_IP = "CHANGE_ME"
+$TARGET_IP = "IP TO MONITOR"
 
 # Log file name
 $logFile = "Disconnections.txt"
